@@ -4,18 +4,18 @@ This Project uploads the images of product and retireves it
 Assumtions:
 This repo uses h2 database.
 2 tables product and productIamges. 
-The raltion is productimages is foregin key to product table by product_id
+The relation is productimages is foregin key to product table by product_id
 
 
 Setup/testing :
 git clone the repo
 Create tables in h2 database
-it uses JWT auth to secure teh rest api
-1)users send usernaem/password
+it uses JWT auth to secure the rest api
+1)user send usernaem/password in postman
 2)if they are correct, then jwt toekn is sent by the server
-3) attachs this token along with any request in header in postman
+3) attach this token along with any request in header in postman
 4) the taoken is validated and if correct, success response is sent
-5) if token is not correct or expired, then failed response.
+5) if token is not correct or expired, then failed response is sent.
 
 #uploadFiles=> Post method to upload all files of the product to folder. the folder for each product will be created and fiels are stored under that folder. The database records will be inserted in product and productiamges table.
 
