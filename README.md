@@ -3,8 +3,8 @@ This Project uploads the images of product and retireves it
 
 Assumtions:
 This repo uses h2 database.
-2 tables product and productIamges. 
-The relation is productimages is foregin key to product table by product_id
+2 tables product and productImages. 
+The relation is productimages is foreign key to product table by product_id
 
 
 Setup/testing :
